@@ -16,8 +16,8 @@ const HeroCamera = ({ children }) => {
     if (groupRef.current) {
       // Pointer-based rotation
       const targetRotation = new THREE.Euler(
-        -state.pointer.y / 3, // Vertical rotation
-        state.pointer.x / 3,  // Horizontal rotation
+        -state.pointer.y / 10, // Vertical rotation
+        state.pointer.x / 10,  // Horizontal rotation
         0                     // No roll
       );
 
@@ -28,28 +28,12 @@ const HeroCamera = ({ children }) => {
         0.25,
         delta
       );
-
-      // If clicked, rotate by 90 degrees on x-axis
-      if (clicked) {
-        const rotationX = THREE.MathUtils.degToRad(90); // 90 degrees in radians
-        easing.damp(
-          groupRef.current.rotation,
-          { x: rotationX, y: targetRotation.y, z: targetRotation.z },
-          0.25,
-          delta
-        );
-      }
     }
   });
 
   return (
     <group
-      ref={groupRef}
-      onClick={(e) => {
-        e.stopPropagation(); // Prevent event bubbling if nested children also have events
-        handleClick();
-      }}
-    >
+      ref={groupRef}>
       {children}
     </group>
 
