@@ -1,3 +1,15 @@
+import picture1 from '../public/assets/examprodem.png'
+import picture2 from '../public/assets/moringaflix.png'
+import picture3 from '../public/assets/peashooterdemo.png'
+import picture4 from '../public/assets/chatapppic.png'
+import flaskico from '../public/assets/Flask.svg'
+import css3ico from '../public/assets/CSS3.svg'
+import firebaseico from '../public/assets/Firebase.svg'
+import jsico from '../public/assets/JavaScript.svg'
+import nodeico from '../public/assets/Node.js.svg'
+import socketico from '../public/assets/Socket.io.svg'
+import swiftico from '../public/assets/Swift.svg'
+
 export const navLinks = [
     {
       id: 1,
@@ -58,13 +70,13 @@ export const navLinks = [
   
   export const myProjects = [
     {
-      title: 'Podcastr - AI Podcast Platform',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+      title: 'ExamerPro - Exam Management System',
+      desc: 'ExamerPro is an advanced managment software for seamless access to making and doing exams. It allows students to do exams efficiently and examiners to easily grade exams. ',
       subdesc:
-        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-      texture: '/textures/project/project1.mp4',
-      logo: '/assets/project-logo1.png',
+        'ExamerPro uses React components and CSS for the frontend development, and it uses Flask and Python for backend integration. It uses Stripe for payment integration.',
+      href: 'https://github.com/MERCYGATUNE/EXAMERPROfrontend',
+      texture: picture1,
+      logo: '/assets/logoproj1.png',
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
@@ -80,27 +92,27 @@ export const navLinks = [
         {
           id: 2,
           name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          path: css3ico,
         },
         {
           id: 3,
           name: 'TypeScript',
-          path: '/assets/typescript.png',
+          path: flaskico,
         },
         {
           id: 4,
           name: 'Framer Motion',
-          path: '/assets/framer.png',
+          path: 'https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png',
         },
       ],
     },
     {
-      title: 'LiveDoc - Real-Time Google Docs Clone',
-      desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+      title: 'MoringaFlix - Netflix Clone',
+      desc: 'MoringaFlix is a website meant to allow a user to seamlessly access a trailer of a movie and watch it in a player. It has secure login credentials that allow each user to safely access the site.',
       subdesc:
-        'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-      texture: '/textures/project/project2.mp4',
+        "Built with React and CSS framework, MoringaFlix shines in it's frontend, using certain components such as Toast for easy notifications. It uses a Firebase backend and an open-source API to easily access movies.",
+      href: 'https://github.com/MercyOroo1/Silverback-Group-One-React-Project',
+      texture: picture2,
       logo: '/assets/project-logo2.png',
       logoStyle: {
         backgroundColor: '#13202F',
@@ -117,27 +129,22 @@ export const navLinks = [
         {
           id: 2,
           name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          path: css3ico,
         },
         {
           id: 3,
           name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          path: firebaseico,
         },
       ],
     },
     {
-      title: 'CarePulse - Health Management System',
-      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+      title: 'PeaShoot - JavaScript Multiplayer Shooting Game',
+      desc: 'PeaShoot was a project inspired by my curiosity to delve into the multiplayer world. I was able to accept this challenge by building a multiplayer shooting game; the cremè de la cremè for multiplayer.',
       subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-      href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-      texture: '/textures/project/project3.mp4',
+        'I used JavaScript on the Frontend and Node.js on the backend together with Socket.io to allow real-time multiplayer functionality. This was paired with other JS frameworks such as Canvas to enhance the frontend.',
+      href: 'https://github.com/LennyWandeto/JSGameAttempt',
+      texture: picture3,
       logo: '/assets/project-logo3.png',
       logoStyle: {
         backgroundColor: '#60f5a1',
@@ -151,32 +158,27 @@ export const navLinks = [
         {
           id: 1,
           name: 'React.js',
-          path: '/assets/react.svg',
+          path: jsico,
         },
         {
           id: 2,
           name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          path: nodeico,
         },
         {
           id: 3,
           name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          path: socketico,
         },
       ],
     },
     {
-      title: 'Horizon - Online Banking Platform',
-      desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+      title: 'Chatter - SwiftUI Chatting App',
+      desc: 'Chatter is a unique chatting application that allows users to easily chat using realtime messaging in a clean interface. This is a demo of what I wanted the chat app to appear.',
       subdesc:
-        'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-      href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-      texture: '/textures/project/project4.mp4',
+        'This application is a demo that currently uses SwiftUI for the frontend and Firebase for the backend and this was my very first try with making an mobile application on iOS. ',
+      href: 'https://github.com/LennyWandeto/ChatAppSwift',
+      texture: picture4,
       logo: '/assets/project-logo4.png',
       logoStyle: {
         backgroundColor: '#0E1F38',
@@ -188,59 +190,12 @@ export const navLinks = [
         {
           id: 1,
           name: 'React.js',
-          path: '/assets/react.svg',
+          path: swiftico,
         },
         {
           id: 2,
           name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
-    },
-    {
-      title: 'Imaginify - AI Photo Manipulation App',
-      desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-      subdesc:
-        'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-      href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-      texture: '/textures/project/project5.mp4',
-      logo: '/assets/project-logo5.png',
-      logoStyle: {
-        backgroundColor: '#1C1A43',
-        border: '0.2px solid #252262',
-        boxShadow: '0px 0px 60px 0px #635BFF4D',
-      },
-      spotlight: '/assets/spotlight5.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          path: firebaseico,
         },
       ],
     },
