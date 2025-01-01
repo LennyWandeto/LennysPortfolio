@@ -4,27 +4,28 @@ import { useGLTF , useFBX, useAnimations} from '@react-three/drei';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 import * as THREE from 'three';
 import * as SkeletonUtils from 'three/examples/jsm/utils/SkeletonUtils';
+// import nmodel from '../public/models/ReadyPlayer1.glb'
 
 const Developer = ({ animationName = 'idle', ...props }) => {
     const group = useRef(); // Ref for the 3D model group
   const { scene, nodes, materials } = useGLTF('src/public/models/ReadyPlayer1.glb'); // Main model
-  const { animations: idleAnimations } = useGLTF('src/public/models/animations/nidle2.glb'); // Idle animation
-  const { actions } = useAnimations(idleAnimations, group); // Map animations to actions
+  // const { animations: idleAnimations } = useGLTF('src/public/models/animations/nidle2.glb'); // Idle animation
+  // const { actions } = useAnimations(idleAnimations, group); // Map animations to actions
 
-  // Name the animation
-  if (idleAnimations[0]) {
-    idleAnimations[0].name = 'idle';
-  }
+  // // Name the animation
+  // if (idleAnimations[0]) {
+  //   idleAnimations[0].name = 'idle';
+  // }
 
-  // Play the selected animation
-  useEffect(() => {
-    if (actions && actions[animationName]) {
-      actions[animationName].reset().fadeIn(0.5).play(); // Play the selected animation
-      return () => actions[animationName].fadeOut(0.5); // Cleanup: Fade out the animation
-    } else {
-      console.error(`Animation "${animationName}" not found.`);
-    }
-  }, [animationName, actions]);
+  // // Play the selected animation
+  // useEffect(() => {
+  //   if (actions && actions[animationName]) {
+  //     actions[animationName].reset().fadeIn(0.5).play(); // Play the selected animation
+  //     return () => actions[animationName].fadeOut(0.5); // Cleanup: Fade out the animation
+  //   } else {
+  //     console.error(`Animation "${animationName}" not found.`);
+  //   }
+  // }, [animationName, actions]);
       
   return (
     <group {...props} dispose={null}>
