@@ -25,8 +25,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Lenny Wandeto</p>
               <p className="grid-subtext">
-                With 12 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
+                I'm a Software Engineer that wants to make a change using technology. My passion and drive for coding has led me to greater heights as a whole.
               </p>
             </div>
           </div>
@@ -39,8 +38,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
+              My tech stack includes React for frontend, Flask for the backend,  I leverage tools like Stripe for payments and Render/Vercel for deployment, focusing on creating responsive, secure, and user-friendly applications.
               </p>
             </div>
           </div>
@@ -66,8 +64,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+              A passion for coding means constantly seeking to solve problems, build innovative solutions, and continuously learn and grow in a dynamic, ever-evolving field. I believe I can make a big change in life as a whole using software engineering.
               </p>
             </div>
           </div>
