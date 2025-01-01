@@ -6,9 +6,9 @@ import * as THREE from 'three';
 import * as SkeletonUtils from 'three/examples/jsm/utils/SkeletonUtils';
 // import nmodel from '../public/models/ReadyPlayer1.glb'
 
-const Developer = ({ animationName = 'idle', ...props }) => {
+const Developer = ({ url, animationName = 'idle', ...props }) => {
     const group = useRef(); // Ref for the 3D model group
-  const { scene, nodes, materials } = useGLTF('src/public/models/ReadyPlayer1.glb'); // Main model
+  const { scene, nodes, materials } = useGLTF(url); // Main model
   // const { animations: idleAnimations } = useGLTF('src/public/models/animations/nidle2.glb'); // Idle animation
   // const { actions } = useAnimations(idleAnimations, group); // Map animations to actions
 
@@ -96,8 +96,8 @@ const Developer = ({ animationName = 'idle', ...props }) => {
   )
 }
 
-useGLTF.preload('src/public/models/ReadyPlayer1.glb')
-useGLTF.preload('src/public/models/animations/nidle2.glb')
+useGLTF.preload(url)
+// useGLTF.preload('src/public/models/animations/nidle2.glb')
 
 export default Developer
 

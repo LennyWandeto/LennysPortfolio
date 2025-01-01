@@ -25,7 +25,7 @@ const Experience = () => {
                             <directionalLight position={[10, 10, 10]} intensity={1} />
                             <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
                             <Suspense fallback={<CanvasLoader />}>
-                                <Developer position-y={-3} scale={3} animationName={animationName} />
+                                <Developer position-y={-3} scale={3} animationName={animationName} url='/public/models/ReadyPlayer1.glb'/>
                             </Suspense>
                         <DebugGLB />
                         </Canvas>
