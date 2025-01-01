@@ -12,44 +12,6 @@ import Button from '../components/Button'
 
 const Hero = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 })
-    // const controls = useControls('HackerRoom', {
-    //     positionX: {
-    //         value: 2.5,
-    //         min: -20,
-    //         max: 20,
-    //     },
-    //     positionY: {
-    //         value: 2.5,
-    //         min: -20,
-    //         max: 10,
-    //     },
-    //     positionZ: {
-    //         value: 2.5,
-    //         min: -10,
-    //         max: 10,
-    //     },
-    //     rotationX: {
-    //         value: 0,
-    //         min: -Math.PI,
-    //         max: Math.PI,
-    //     },
-    //     rotationY: {
-    //         value: 0,
-    //         min: -Math.PI,
-    //         max: Math.PI,
-    //     },
-    //     rotationZ: {
-    //         value: 0,
-    //         min: -Math.PI,
-    //         max: Math.PI,
-    //     },
-    //     scale: {
-    //         value: 1,
-    //         min: 0.1,
-    //         max: 10,
-    //     }
-
-    // })
     return (
         <section className="min-h-screen w-full flex flex-col relative">
             <div className="w-full mx-auto flex flex-col sm:mt-36 c-space gap-3">
