@@ -96,7 +96,7 @@ const Developer = ({ url, animationName = 'idle', ...props }) => {
   )
 }
 
-useGLTF.preload('/public/models/ReadyPlayer1.glb')
+// useGLTF.preload('/public/models/ReadyPlayer1.glb')
 // useGLTF.preload('src/public/models/animations/nidle2.glb')
 
 export default Developer
