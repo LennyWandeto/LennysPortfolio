@@ -13,9 +13,12 @@ const Footer = () => {
             <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2" href='https://github.com/LennyWandeto'/>
           </div>
             </a>
-            <a>
+            <a href='https://www.linkedin.com/in/lennywandeto/' target='_blank'>
           <div className="social-icon">
-            <img src="/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2" />
+            <img src="/assets/linkedin.svg" alt="twitter" className="w-7 h-7" style={{
+              paddingBottom: '5px',
+              paddingLeft: '3px',
+            }}/>
           </div>
             </a>
             <a href='https://www.instagram.com/lennywandeto/' target='_blank'>

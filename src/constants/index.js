@@ -50,22 +50,6 @@ export const navLinks = [
       review:
         'The creativity that Lenny shows in any of his work is amazing. He backs it up with even better work ethic and a sharp intuition for his code. It would be a good choice to hire him. ',
     },
-    // {
-    //   id: 3,
-    //   name: 'John Dohsas',
-    //   position: 'Project Manager at UrbanTech ',
-    //   img: 'assets/review3.png',
-    //   review:
-    //     'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-    // },
-    // {
-    //   id: 4,
-    //   name: 'Ether Smith',
-    //   position: 'CEO of BrightStar Enterprises',
-    //   img: 'assets/review4.png',
-    //   review:
-    //     'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-    // },
   ];
   
   export const myProjects = [
@@ -231,13 +215,4 @@ export const navLinks = [
       icon: '/assets/figma.svg',
       animation: 'clapping',
     },
-    // {
-    //   id: 3,
-    //   name: 'Notion',
-    //   pos: 'Junior Web Developer',
-    //   duration: '2019 - 2020',
-    //   title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    //   icon: '/assets/notion.svg',
-    //   animation: 'salute',
-    // },
   ];
