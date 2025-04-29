@@ -24,7 +24,7 @@ const GlobeContainer = () => {
   }, []);
 
   return (
-    <div className="relative w-full sm:h-[326px] h-[326px]">
+    <div className="relative w-full sm:h-[326px] h-[326px] flex justify-center items-center">
       {/* DOM-based Globe */}
       <Globe
         ref={globeRef}

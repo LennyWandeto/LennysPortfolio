@@ -4,9 +4,12 @@ import { OrbitControls } from '@react-three/drei';
 import { workExperiences } from '../constants/index.js';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 import Developer from '../components/Developer.jsx';
+import { useIsMobile } from '../hooks/useIsMobile.js';
+import RotatingDeveloper from '../components/RotatingDeveloper.jsx';
 
 const Experience = () => {
     const [animationName, setAnimationName] = useState('idle');
+    const isMobile = useIsMobile();
 
     return (
         <section className="c-space my-20" id="work">
@@ -14,14 +17,19 @@ const Experience = () => {
                 <p className="head-text">Relevant Education</p>
 
                 <div className="work-container">
-                    <div className="work-canvas">
+                    <div className={`w-full ${isMobile ? 'h-[300px]' : 'h-[500px]'} relative work-canvas`}>
                         <Canvas>
                             <ambientLight intensity={7} />
                             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
                             <directionalLight position={[10, 10, 10]} intensity={1} />
                             <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
                             <Suspense fallback={<CanvasLoader />}>
-                                <Developer position-y={-3} scale={3} animationName={animationName} url='/models/ReadyPlayer1.glb'/>
+                                <RotatingDeveloper
+                                    positionY={isMobile ? -2.5 : -3}
+                                    scale={isMobile ? 3 : 3}
+                                    animationName={animationName}
+                                    url='/models/ReadyPlayer1.glb'
+                                />
                             </Suspense>
                         </Canvas>
                     </div>
