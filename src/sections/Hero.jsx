@@ -28,8 +28,8 @@ const Hero = () => {
                         <PerspectiveCamera makeDefault position={isMobile ? [0, 0, 40] : [0, 0, 30]} />
                         <HeroCamera>
                             <HackerRoom
-                                scale={isMobile ? 7.8 : 7}   // smaller on mobile
-                                position={[0, 0, 0]}
+                                scale={isMobile ? 7.5 : 7}   // smaller on mobile
+                                position={[0, -.2, 0]}
                             />
                         </HeroCamera>
 
@@ -50,8 +50,8 @@ const Hero = () => {
 
                         <group>
                             <Torus
-                                scale={isMobile ? 0.68 : 1.4}
-                                position={isMobile ? [3.1, -4.4, 22] : [12.9, 1.3, 5.1]}
+                                scale={isMobile ? 0.71 : 1.4}
+                                position={isMobile ? [3, -4.4, 22] : [12.9, 1.3, 5.1]}
                             />
                         </group>
 
