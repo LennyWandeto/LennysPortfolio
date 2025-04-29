@@ -28,8 +28,8 @@ const Hero = () => {
                         <PerspectiveCamera makeDefault position={isMobile ? [0, 0, 40] : [0, 0, 30]} />
                         <HeroCamera>
                             <HackerRoom
-                                scale={isMobile ? 7.5 : 7}   // smaller on mobile
-                                position={[0, -.2, 0]}
+                                scale={isMobile ? 7.3 : 7}   // smaller on mobile
+                                position={[0, -.5, 0]}
                             />
                         </HeroCamera>
 
@@ -41,7 +41,7 @@ const Hero = () => {
 
                                 <Socrates
                                     url='/models/bust-hi.glb'
-                                    position={isMobile ? [-7.2, 0, -1] : [-14, -9.5, 2.9]}
+                                    position={isMobile ? [-7, 0, -1] : [-14, -9.5, 2.9]}
                                     rotation={[-0.1, -0.9, 0.06]}
                                     scale={isMobile ? 1.2 : 1}
                                 />
