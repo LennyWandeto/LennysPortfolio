@@ -7,16 +7,15 @@ import { Center, OrbitControls } from '@react-three/drei';
 import { myProjects } from '../constants/index.js';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 import DemoComputer from '../components/DemoComputer.jsx';
-import logo1 from '../public/assets/logoproj1.png'
-import logo2 from '../public/assets/M.png';
-import logo3 from '../public/assets/shooting-game.png'
-import logo4 from '../public/assets/chat.png'
+import logo3 from '../public/assets/logoproj1.png'
+import logo4 from '../public/assets/M.png';
+import logo5 from '../public/assets/shooting-game.png'
+import logo6 from '../public/assets/chat.png'
+import logo2 from '../public/assets/handwritio-icon.png'
+import logo1 from '../public/assets/project-logo6.png'
 
-import picture1 from '../public/assets/examprodem.png'
-import picture2 from '../public/assets/moringaflix.png'
+const logos = [logo1, logo2, logo3, logo4, logo5, logo6]
 
-const logos = [logo1, logo2, logo3, logo4]
-// const textures = [picture1, picture2, picture3, picture4]
 
 const projectCount = myProjects.length;
 
@@ -74,7 +73,7 @@ const Projects = () => {
               href={currentProject.href}
               target="_blank"
               rel="noreferrer">
-              <p>Check GitHub Repo</p>
+              <p>{currentProject.referrer}</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>

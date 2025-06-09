@@ -2,6 +2,8 @@ import picture1 from '../public/assets/examprodem.png'
 import picture2 from '../public/assets/moringaflix.png'
 import picture3 from '../public/assets/peashooterdemo.png'
 import picture4 from '../public/assets/chatapppic.png'
+import picture5 from '../public/assets/handwritio-demo.png'
+import picture6 from '../public/assets/examlectica-demo.png'
 import flaskico from '../public/assets/Flask.svg'
 import css3ico from '../public/assets/CSS3.svg'
 import firebaseico from '../public/assets/Firebase.svg'
@@ -9,6 +11,13 @@ import jsico from '../public/assets/JavaScript.svg'
 import nodeico from '../public/assets/Node.js.svg'
 import socketico from '../public/assets/Socket.io.svg'
 import swiftico from '../public/assets/Swift.svg'
+import nextico from '../public/assets/nextjs.svg'
+import supabaseico from '../public/assets/supabase.svg'
+import geminiico from '../public/assets/gemini.svg'
+import flutterico from '../public/assets/flutter.svg'
+import azureico from '../public/assets/azure.svg'
+import paystackico from '../public/assets/paystack.svg'
+
 
 export const navLinks = [
     {
@@ -54,6 +63,77 @@ export const navLinks = [
   
   export const myProjects = [
     {
+      title: 'Examlectica - AI Document Analysis & Learning Tool',
+      desc: 'Examlectica is an intelligent application that transforms documents into comprehensive learning materials. It automatically generates summaries, creates flashcards, and produces quiz questions to enhance the learning experience.',
+      subdesc:
+        'Developed using Next.js for the frontend framework, Supabase for database and backend services, and Google Gemini AI for document analysis and content generation. The app streamlines the process of creating study materials from any document. It also uses Paystack for payment integration.',
+      href: 'https://examlectica.vercel.app/',
+      texture: picture6,
+      logo: '/assets/project-logo6.png',
+      logoStyle: {
+        background: 'linear-gradient(135deg, #E0E7FF 0%, #FED7AA 100%)',
+        border: '0.2px solid #A78BFA',
+        boxShadow: '0px 0px 60px 0px #A78BFA4D',
+      },
+      spotlight: '/assets/spotlight1.png',
+      referrer: 'Visit Website',
+      tags: [
+        {
+          id: 1,
+          name: 'Next.js',
+          path: nextico,
+        },
+        {
+          id: 2,
+          name: 'Supabase',
+          path: supabaseico,
+        },
+        {
+          id: 3,
+          name: 'Gemini AI',
+          path: geminiico,
+        },
+        {
+          id: 4,
+          name: 'Paystack',
+          path: paystackico,
+        },
+      ],
+    },
+    {
+      title: 'Handwritio - AI Handwriting Recognition App',
+      desc: 'Handwritio is an AI-powered application that converts handwritten text to digital text with high accuracy. It leverages advanced machine learning to recognize and transcribe handwritten notes, making them easily editable and searchable.',
+      subdesc:
+        'Built with Flutter for cross-platform mobile development, Firebase for backend services and user authentication, and Azure AI services for the handwriting recognition capabilities. The app provides a seamless experience for digitizing handwritten content.',
+      href: 'https://handwritio.vercel.app/',
+      texture: picture5,
+      logo: '/assets/handwritio-icon.png',
+      logoStyle: {
+        backgroundColor: '#FEF3C7',
+        border: '0.2px solid #F59E0B',
+        boxShadow: '0px 0px 60px 0px #F59E0B4D',
+      },
+      spotlight: '/assets/spotlight5.png',
+      referrer: 'Visit Website',
+      tags: [
+        {
+          id: 1,
+          name: 'Flutter',
+          path: flutterico,
+        },
+        {
+          id: 2,
+          name: 'Firebase',
+          path: firebaseico,
+        },
+        {
+          id: 3,
+          name: 'Azure AI',
+          path: azureico,
+        },
+      ],
+    }, 
+    {
       title: 'ExamerPro - Exam Management System',
       desc: 'ExamerPro is an advanced managment software for seamless access to making and doing exams. It allows students to do exams efficiently and examiners to easily grade exams. ',
       subdesc:
@@ -67,6 +147,7 @@ export const navLinks = [
         boxShadow: '0px 0px 60px 0px #AA3C304D',
       },
       spotlight: '/assets/spotlight1.png',
+      referrer: 'Check GitHub Repo',
       tags: [
         {
           id: 1,
@@ -104,6 +185,7 @@ export const navLinks = [
         boxShadow: '0px 0px 60px 0px #2F6DB54D',
       },
       spotlight: '/assets/spotlight2.png',
+      referrer: 'Check GitHub Repo',
       tags: [
         {
           id: 1,
@@ -138,6 +220,7 @@ export const navLinks = [
         boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
       },
       spotlight: '/assets/spotlight3.png',
+      referrer: 'Check GitHub Repo',
       tags: [
         {
           id: 1,
@@ -170,6 +253,7 @@ export const navLinks = [
         boxShadow: '0px 0px 60px 0px #2F67B64D',
       },
       spotlight: '/assets/spotlight4.png',
+      referrer: 'Check GitHub Repo',
       tags: [
         {
           id: 1,
