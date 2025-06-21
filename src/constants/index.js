@@ -176,7 +176,7 @@ export const navLinks = [
       desc: 'MoringaFlix is a website meant to allow a user to seamlessly access a trailer of a movie and watch it in a player. It has secure login credentials that allow each user to safely access the site.',
       subdesc:
         "Built with React and CSS framework, MoringaFlix shines in it's frontend, using certain components such as Toast for easy notifications. It uses a Firebase backend and an open-source API to easily access movies.",
-      href: 'https://github.com/MercyOroo1/Silverback-Group-One-React-Project',
+      href: 'https://moringaflix.netlify.app/login',
       texture: picture2,
       logo: '/assets/project-logo2.png',
       logoStyle: {
@@ -185,7 +185,7 @@ export const navLinks = [
         boxShadow: '0px 0px 60px 0px #2F6DB54D',
       },
       spotlight: '/assets/spotlight2.png',
-      referrer: 'Check GitHub Repo',
+      referrer: 'Visit Website',
       tags: [
         {
           id: 1,
